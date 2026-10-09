@@ -53,8 +53,26 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           child: const Align(
-            alignment: Alignment(0.7, 0.0),
-            child: Text('🎂', style: TextStyle(fontSize: 80)),
+            alignment: Alignment(0.85, -0.15),
+            child: SizedBox(
+              width: 140,
+              child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text('🎂', style: TextStyle(fontSize: 64)),
+                SizedBox(height: 4),
+                Text(
+                  'KaraUnit Family\nProduction',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+              ),
+            ),
           ),
         ),
       ),
@@ -173,6 +191,16 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('🎂', style: TextStyle(fontSize: 90)),
+            const SizedBox(height: 8),
+            const Text(
+              'KaraUnit Family Production',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Color(0xFFAD1457),
+                fontSize: 14,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
             const SizedBox(height: 20),
             const Text(
               'Нет записей',
